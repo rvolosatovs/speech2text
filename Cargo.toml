@@ -1,0 +1,16 @@
+[package]
+name = "speech2text"
+version = "0.1.0"
+authors = ["Roman Volosatovs <rvolosatovs@riseup.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+deepspeech = "0.9.0"
+cpal = "0.13.1"
+fvad = { path = "../fvad", version = "0.1.3"}
+hound = "3.4.0"
+dasp = { version = "0.11.0", features = [ "interpolate", "interpolate-linear", "signal", "ring_buffer" ] }
+audrey = "0.3.0"
+structopt = "0.3.21"
